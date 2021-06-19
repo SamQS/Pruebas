@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Datos Programacion";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/style.css"/>
+    <script src="~/js/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+<div class="containerr">
+    <img src="~/img/y.jpg">
+    
+</div>
+
+<button class="btn btn-primary btn-lg">Trabajo Grupal 1</button>
+<br>
+<button class="btn btn-primary btn-lg">Trabajo Grupal 2</button>
+
+    <div class="containeer">
+    <h2 class="display-6">UNIVERSIDAD SAN MARTIN DE PORRES</h2>
+    <h2 class="display-6">FACULTAD DE INGENIERIA Y ARQUITECTURA</h2>
+    <h2 class="display-6">ESCUELA PROFESIONAL DE INGENIERIA INDUSTRIAL</h2>
+    <br>
+    <br>
+    <form action="post">
+        <div class="form-group">
+        <label for=""><h6>SEDE:</h6></label>
+        <label for=""><h4> Lima</h4></label>
+        </div>
+        <div class="form-group">
+         <label for=""><h6>NOMBRE(S):</h6></label>
+        <label for=""><h4> Melany Janira</h4></label>
+        </div>
+        <div class="form-group">
+         <label for=""><h6>APELLIDOS:</h6></label>
+        <label for=""><h4> Aquino Nuñez</h4></label>
+        </div>
+        <div class="form-group">
+         <label for=""><h6>CÓDIGO UNIVERSITARIO:</h6></label>
+        <label for=""><h4> 2020220741</h4></label>
+        </div>
+        <div class="form-group">
+         <label for=""><h6>SEMESTRE ACADEMICO: </h5><h4>2021-1</h4></label>
+        </div>
+    </form>
+<hr size="35px" width="100%" align="center" color="#394665"/>     
+<h2 class="display-6">MI APORTE EN EL DESARROLLO DE LA ASIGNATURA DE "INTRODUCCIÓN A LA PROGRAMACIÓN"</h2>
+<hr size="35px" width="100%" align="center" color="#394665"/>
+<div class="grupo-select">
+    <h4>MODULO 1:</h4>
+		<select name="modulo1" id="modulo1" class="form-control">
+        <option >-- Opciones -- </option>
+		<option value = "https://www.youtube.com/watch?v=21VZl7Gs1F0&ab_channel=MoratMoratCanaloficialdeartista" >Tarea individual 1 (PDF)</option>
+        <option value = "https://www.youtube.com/watch?v=21VZl7Gs1F0&ab_channel=MoratMoratCanaloficialdeartista" >Tarea individual 2 (PDF)</option>
+        <option value = "https://www.youtube.com/watch?v=21VZl7Gs1F0&ab_channel=MoratMoratCanaloficialdeartista" >Tarea individual 3 (PDF)</option>
+        <option value = "https://www.youtube.com/watch?v=21VZl7Gs1F0&ab_channel=MoratMoratCanaloficialdeartista" >Tarea individual 4 (PDF)</option>
+        </select>
+<hr size="35px" width="100%" align="center" color="#394665"/>
+<div class="grupo-select">
+    <h4>MODULO 2:</h4>
+		<select name="mes" id="selectMes" class="form-control">
+        <option disabled >Opciones: </option>
+		<option >Tarea individual 5 (PDF)</option></a>
+        <option >Tarea individual 6 (PDF)</option>
+        <option >Tarea individual 7 (PDF)</option>
+        <option >Tarea individual 8 (PDF)</option>
+        </select>
+        <hr size="35px" width="100%" align="center" color="#394665"/>
+<div class="grupo-select">
+    <h4>MODULO 3:</h4>
+		<select name="mes" id="selectMes" class="form-control">
+        <option disabled >Opciones: </option>
+		<option >Tarea individual 9 (PDF)</option>
+        <option >Tarea individual 10 (PDF)</option>
+        <option >Tarea individual 11 (PDF)</option>
+        <option >Tarea individual 12 (PDF)</option>
+        </select>
+        <hr size="35px" width="100%" align="center" color="#394665"/>
+<div class="grupo-select">
+    <h4>MODULO 4:</h4>
+		<select name="mes" id="selectMes" class="form-control">
+        <option disabled >Opciones: </option>
+		<option >Tarea individual 13 (PDF)</option>
+        <option >Tarea individual 14 (PDF)</option>
+        <option >Tarea individual 15 (PDF)</option>
+        <option >Video de mi Cuaderno de Clases(MP4)</option>
+        </select>
+        <hr size="35px" width="100%" align="center" color="#394665"/>
+  </div>  
+</div>
+<script>
+    $(function(){
+      // bind change event to select
+      $('#modulo1').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
+</body>
+</div>
